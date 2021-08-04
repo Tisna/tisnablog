@@ -28,3 +28,27 @@ Here's some reasons to use nested routes
 ## Note
 
 - The previous/next post links at bottom of the template is currently sorted by date. One could explore modifying the template to refer the reader to the previous/next post in the series, rather than by date.
+
+## Syntax highlighting
+
+Here’s an example of how you can use syntax highlighting with [GitHub Flavored Markdown](https://help.github.com/articles/basic-writing-and-formatting-syntax/):
+
+````
+```js:fancyAlert.js
+function fancyAlert(arg) {
+  if (arg) {
+    $.facebox({ div: '#foo' })
+  }
+}
+```
+````
+
+And here's how it looks - nicely colored with styled code titles!
+
+```js:fancyAlert.js
+function fancyAlert(arg) {
+  if (arg) {
+    $.facebox({ div: '#foo' })
+  }
+}
+```
