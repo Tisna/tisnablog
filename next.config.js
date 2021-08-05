@@ -1,8 +1,8 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
+// const withBundleAnalyzer = require('@next/bundle-analyzer')({
+//   enabled: process.env.ANALYZE === 'true',
+// })
 
-module.exports = withBundleAnalyzer({
+module.exports = {
   reactStrictMode: true,
   target: 'serverless',
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
@@ -39,4 +39,4 @@ module.exports = withBundleAnalyzer({
 
     return config
   },
-})
+}
