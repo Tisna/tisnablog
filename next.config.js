@@ -4,6 +4,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 module.exports = withBundleAnalyzer({
   reactStrictMode: true,
+  target: 'serverless',
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   eslint: {
     dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
